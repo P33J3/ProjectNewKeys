@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- CSS -->
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-social/bootstrap-social.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/font-awesome/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+			<div class="container">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#SiteNavBar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="sitenavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aboutus">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#reviews">Reviews</a>
+						</li>
+					</ul>
+					<span class="navbar-text ml-auto">
+						<a role="button" data-toggle="modal" data-target="#loginModal">
+							Login
+						</a>
+					</span>
+				</div>
+			</div>
+		</nav>
+		<header class="headers container-fluid">
+			<div class="overlay">
+				<div class="row row-content justify-content-center search-fluid">
+					<div class="col-12 text-center">
+						<h1>Ready?</h1>
+					</div>
+					<div class="col-md-6">
+						<form>
+							<div class="form-group row">
+								<label for="make" class="col-md-2 col-form-label">Make</label>
+								<div class="col">
+									<select name="brands" class="form-control" id="brands">
+										<option selected>Select...</option>
+										<option value="Toyota">Toyota</option>
+										<option value="BMW">BMW</option>
+										<option value="Nissan">Nissan</option>
+										<option value="Jaguar">Jaguar</option>
+										<option value="Audi">Audi</option>
+										<option value="Subaru">Subaru</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="model" class="col-md-2 col-form-label">Model</label>
+								<div class="col">
+									<select name="models" class="form-control" id="models">
+										<option selected>Select...</option>
+										<!--	<option value="Toyota">Toyota</option>
+										<option value="BMW">BMW</option>
+										<option value="Nissan">Nissan</option>
+										<option value="Jaguar">Jaguar</option>
+										<option value="Audi">Audi</option>
+										<option value="Subaru">Subaru</option> -->
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="freesearch" class="col-md-2 col-form-label"
+									>Search</label
+								>
+								<div class="col">
+									<input
+										type="text"
+										class="form-control"
+										id="freeSearch"
+										name="freeSearch"
+										placeholder="Type Here"
+									/>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<div class="offset-md-2 col-md-10">
+									<button type="submit" class="btn">Search</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="about overlay" id="aboutus">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<img
+							src="./images/clay-banks-unsplash.jpg"
+							alt="Photo by Clay Banks on Unsplash"
+							class="img-fluid"
+						/>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 desc">
+						<h3 class="text-white">Our Team</h3>
+						<p class="text-white">
+							ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+							minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+							aliquip ex ea commodo consequat. Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore eu fugiat
+							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+							sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Posts section -->
+		<div class="blog overlay" id="reviews">
+			<h1 class="text-center">Popular Cars</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img">
+								<img
+									src="images/alee-megdad-unsplash.jpg"
+									class="img-fluid"
+									alt="photo by alee megdad from unsplash.com"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">
+									proident, sunt in culpa qui officia deserunt mollit anim id
+									est laborum.
+								</p>
+							</div>
+							<div class="card-footer">
+								<a href="" class="card-link">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img">
+								<img
+									src="images/john-michael-wilyat-unsplash.jpg"
+									class="img-fluid"
+									alt="photo by john michael wilyat from unsplash.com"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">
+									proident, sunt in culpa qui officia deserunt mollit anim id
+									est laborum.
+								</p>
+							</div>
+							<div class="card-footer">
+								<a href="" class="card-link">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img">
+								<img
+									src="images/konrad-bednarek--unsplash.jpg"
+									class="img-fluid"
+									alt="photo by konrad-bednarek from unsplash.com"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">
+									proident, sunt in culpa qui officia deserunt mollit anim id
+									est laborum.
+								</p>
+							</div>
+							<div class="card-footer">
+								<a href="" class="card-link">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-sm-2 offset-1">
+						<h5>Links</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="./aboutus.html">About</a></li>
+							<li><a href="#">Sites</a></li>
+							<li><a href="contactus.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-sm-5 text-center">
+						<h5>Social</h5>
+						<a
+							class="btn btn-social-icon btn-instagram"
+							href="http://instagram.com/"
+							><i class="fa fa-instagram"></i
+						></a>
+						<a
+							class="btn btn-social-icon btn-facebook"
+							href="http://facebook.com/"
+							><i class="fa fa-facebook"></i
+						></a>
+						<a
+							class="btn btn-social-icon btn-twitter"
+							href="http://twitter.com/"
+							><i class="fa fa-twitter"></i
+						></a>
+						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"
+							><i class="fa fa-youtube"></i
+						></a>
+					</div>
+					<div class="col-sm-4 text-center">
+						<a role="button" class="btn btn-link" href="tel:+18768001234"
+							><i class="fa fa-phone fa-lg text-white"></i> 1-876-800-1234</a
+						><br />
+						<a
+							role="button"
+							class="btn btn-link"
+							href="mailto:newcar@carkeys.com"
+							><i class="fa fa-envelope-o fa-lg text-white"></i>
+							newcar@carkeys.com</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Scripts  -->
+
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
+</html>
