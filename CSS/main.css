@@ -1,10 +1,46 @@
 /*header style*/
-.headers {
-	background-image: url("../images/darwin-vegher-unsplash.jpg");
 
-	background-size: cover;
+.bg-section {
+	/*background-image: url(); */
+	background-image: url("../images/AdobeStock_194293024_carkeys.jpeg");
+	/* Center and scale the image nicely */
 	background-position: center;
-	padding-right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	position: relative;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+}
+
+.landing-text {
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+}
+
+.search-text {
+	color: white;
+	font-weight: bold;
+	top: 70%;
+	left: 25%;
+	text-align: center;
 }
 
 .search-fluid {
@@ -20,37 +56,27 @@
 }
 
 .headers .btn {
-	background-color: rgba(73, 132, 103);
+	background-color: rgba(51, 143, 223);
 }
 
 .navbar-dark {
-	background-color: rgba(149, 25, 12, 0.8);
-}
-
-.overlay {
-	position: relative;
-	min-height: 100%;
-	min-width: 100%;
-	left: 0;
-	top: 0;
-	right: 0;
-
-	background: rgba(134, 133, 133, 0.2);
+	background-color: rgba(51, 143, 223, 0.8);
 }
 
 /* About Us style*/
 
-.about {
+#aboutus {
 	margin: 4em 0;
-	/*padding: 1em*/
 	position: relative;
 	margin-top: 0;
 	margin-bottom: 0;
-	background-color: rgba(149, 25, 12, 0.5);
+	background-color: rgb(255, 255, 255);
 }
 
-.about h1 {
+#aboutus h3 {
 	margin: 2em;
+	color: rgb(45, 155, 239);
+	text-align: center;
 }
 
 .about img {
@@ -58,19 +84,12 @@
 	width: 100%;
 	border-radius: 50%;
 }
-.about span {
-	display: block;
-	color: #888;
-	position: absolute;
-	left: 115px;
-}
+
 .about .desc {
 	padding: 2em;
-	border-left: 4px solid white;
+	border-left: 4px solid rgb(45, 155, 239);
 }
-.about .desc h3 {
-	color: #10828c;
-}
+
 .about .desc p {
 	line-height: 2;
 	color: #888;
@@ -91,46 +110,46 @@
 .row {
 	margin-right: 0px;
 }
-/* Blog Styles */
+/* search Styles */
 
-.blog {
+.search {
 	margin-top: 0;
 	position: relative;
-	background-color: rgba(73, 132, 103, 0.5);
+	background-color: rgba(255, 255, 255, 1);
 }
 
-.blog h1 {
-	color: white;
-	padding: 1em;
+.search h1 {
+	color: rgba(51, 143, 223);
+	padding-top: 2em;
 }
 
-.blog .card {
+.search .card {
 	box-shadow: 0 0 20px #ccc;
-	background-color: rgba(202, 140, 133);
+	background-color: rgba(53, 140, 196);
 	color: white;
 }
-.blog .card img {
+.search .card img {
 	height: auto;
 	width: 100%;
 }
 
-.blog .card-title {
+.search .card-title {
 	color: ;
 }
-.blog .card-body {
+.search .card-body {
 	padding: 1em;
 }
 
-.blog a {
-	color: rgba(25, 123, 189);
+.search a {
+	color: rgba(255, 255, 255);
 }
 
 .site-footer {
-	background-image: linear-gradient(rgba(164, 193, 179), rgba(202, 140, 133));
+	background-color: rgba(51, 143, 223);
 	color: white;
 	padding: 20px 0;
 }
 
 .site-footer a {
-	color: rgba(25, 123, 189);
+	color: white;
 }
