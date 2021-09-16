@@ -1,5 +1,7 @@
 /*header style*/
-
+.headers {
+	position: relative;
+}
 .bg-section {
 	/*background-image: url(); */
 	background-image: url("../images/AdobeStock_194293024_carkeys.jpeg");
@@ -42,6 +44,13 @@
 	left: 25%;
 	text-align: center;
 }
+
+@media only screen and (max-width: 767px) {
+	.search-text {
+		left: 0;
+	}
+}
+ 
 
 .search-fluid {
 	height: 100vh;
@@ -116,6 +125,7 @@
 	margin-top: 0;
 	position: relative;
 	background-color: rgba(255, 255, 255, 1);
+	padding-left: 2.5em;
 }
 
 .search h1 {
@@ -123,21 +133,31 @@
 	padding-top: 2em;
 }
 
-.search .card {
-	box-shadow: 0 0 20px #ccc;
-	background-color: rgba(53, 140, 196);
-	color: white;
-}
-.search .card img {
-	height: auto;
-	width: 100%;
+.search h5 {
+	padding-top: 1em;
 }
 
-.search .card-title {
-	color: ;
-}
 .search .card-body {
+	box-shadow: 0 0 20px #ccc;
+	background-color: white;
+	color: white;
 	padding: 1em;
+	background-color: rgba(51, 143, 223);
+}
+.search .card img {
+	height: 20vw;
+	max-width: 100%;
+	object-fit: contain;
+	
+	
+}
+
+.search .card {
+	
+}
+
+.search .card-footer {
+	background-color: rgba(51, 143, 223);
 }
 
 .search a {
