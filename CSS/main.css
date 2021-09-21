@@ -1,7 +1,12 @@
 /*header style*/
+.navbar-text {
+	padding-left: 8px;
+}
+
 .headers {
 	position: relative;
 }
+
 .bg-section {
 	/*background-image: url(); */
 	background-image: url("../images/AdobeStock_194293024_carkeys.jpeg");
@@ -10,7 +15,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
@@ -48,12 +53,29 @@
 @media only screen and (max-width: 767px) {
 	.search-text {
 		left: 0;
+		top: 0;
+	}
+
+	.landing-text {
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		z-index: 2;
+		width: 80%;
+		min-height: 400px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#aboutus {
+		padding-top: 100px;
 	}
 }
- 
 
 .search-fluid {
-	height: 100vh;
+	min-height: 100vh;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -105,7 +127,7 @@
 }
 
 .container-fluid {
-	height: 100vh;
+	min-height: 100vh;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -124,6 +146,7 @@
 .search {
 	margin-top: 0;
 	position: relative;
+
 	background-color: rgba(255, 255, 255, 1);
 	padding-left: 2.5em;
 }
@@ -139,7 +162,8 @@
 
 .search .card-body {
 	box-shadow: 0 0 20px #ccc;
-	background-color: white;
+	text-align: center;
+
 	color: white;
 	padding: 1em;
 	background-color: rgba(51, 143, 223);
@@ -148,12 +172,14 @@
 	height: 20vw;
 	max-width: 100%;
 	object-fit: contain;
-	
-	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
-.search .card {
-	
+.search .card-img {
+	background-color: rgba(45, 155, 239, 0);
 }
 
 .search .card-footer {
